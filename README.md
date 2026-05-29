@@ -118,7 +118,7 @@ Prototype dibuat menggunakan Streamlit dengan entrypoint `app.py`.
 
 Link prototype Streamlit Community Cloud:
 
-- https://jaya-jaya-institut-dropout-aqilaziz.streamlit.app
+- https://yzdr3z3wq5gh5uuc4kuwol.streamlit.app/
 
 Jika reviewer menjalankan ulang secara lokal, gunakan perintah `streamlit run app.py`.
 
