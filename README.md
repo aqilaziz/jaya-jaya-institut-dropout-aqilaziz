@@ -15,7 +15,7 @@ Jaya Jaya Institut menghadapi tingkat dropout yang perlu ditekan. Institusi memb
 ## Cakupan Proyek
 
 - Melakukan eksplorasi dataset students performance.
-- Membuat dashboard monitoring faktor dropout.
+- Membuat dashboard monitoring faktor dropout menggunakan Streamlit.
 - Membuat model machine learning klasifikasi risiko dropout.
 - Membuat prototype Streamlit untuk prediksi risiko mahasiswa.
 - Memberikan rekomendasi action items.
@@ -77,7 +77,22 @@ Prototype lokal akan terbuka di `http://localhost:8501`.
 
 ## Dashboard
 
-Dashboard disediakan dalam bentuk file HTML, screenshot, dan data ringkasan:
+Dashboard interaktif dibuat menggunakan Streamlit dan tersedia pada tab `Dashboard Monitoring`.
+
+Link dashboard Streamlit Community Cloud:
+
+- https://yzdr3z3wq5gh5uuc4kuwol.streamlit.app/
+
+Dashboard mendukung:
+
+- Filter status mahasiswa (`Dropout`, `Graduate`, dan `Enrolled`).
+- Monitoring KPI jumlah mahasiswa, jumlah dropout, graduate, enrolled, dan dropout rate.
+- Visualisasi distribusi status mahasiswa.
+- Visualisasi rata-rata performa akademik per status.
+- Visualisasi dropout rate berdasarkan faktor intervensi seperti tuition, debtor, dan scholarship.
+- Tabel mahasiswa `Enrolled` berisiko tinggi berdasarkan probabilitas model.
+
+Artefak dashboard pendukung juga tersedia dalam bentuk file HTML, screenshot, dan data ringkasan:
 
 - `dashboard/dashboard.html`
 - `dashboard/dashboard.png`
@@ -86,7 +101,7 @@ Dashboard disediakan dalam bentuk file HTML, screenshot, dan data ringkasan:
 - `dashboard/dropout_factor_summary.csv`
 - `dashboard/top_dropout_risk.csv`
 
-Dashboard memuat distribusi status mahasiswa, dropout rate berdasarkan pembayaran tuition, performa akademik semester 2, dan sebaran usia saat pendaftaran.
+File pendukung memuat distribusi status mahasiswa, dropout rate berdasarkan pembayaran tuition, performa akademik semester 2, dan sebaran usia saat pendaftaran.
 
 ## Prototype Machine Learning
 
@@ -114,9 +129,9 @@ Prototype akan terbuka di `http://localhost:8501`.
 
 ### Streamlit Community Cloud
 
-Prototype dibuat menggunakan Streamlit dengan entrypoint `app.py`.
+Dashboard dan prototype prediksi dibuat menggunakan Streamlit dengan entrypoint `app.py`.
 
-Link prototype Streamlit Community Cloud:
+Link Streamlit Community Cloud:
 
 - https://yzdr3z3wq5gh5uuc4kuwol.streamlit.app/
 
