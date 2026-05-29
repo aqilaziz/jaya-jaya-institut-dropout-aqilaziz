@@ -1,0 +1,100 @@
+{
+  "accuracy": 0.9201101928374655,
+  "precision": 0.9124087591240876,
+  "recall": 0.8802816901408451,
+  "f1": 0.8960573476702509,
+  "features": [
+    "Marital_status",
+    "Application_mode",
+    "Application_order",
+    "Course",
+    "Daytime_evening_attendance",
+    "Previous_qualification",
+    "Previous_qualification_grade",
+    "Nacionality",
+    "Mothers_qualification",
+    "Fathers_qualification",
+    "Mothers_occupation",
+    "Fathers_occupation",
+    "Admission_grade",
+    "Displaced",
+    "Educational_special_needs",
+    "Debtor",
+    "Tuition_fees_up_to_date",
+    "Gender",
+    "Scholarship_holder",
+    "Age_at_enrollment",
+    "International",
+    "Curricular_units_1st_sem_credited",
+    "Curricular_units_1st_sem_enrolled",
+    "Curricular_units_1st_sem_evaluations",
+    "Curricular_units_1st_sem_approved",
+    "Curricular_units_1st_sem_grade",
+    "Curricular_units_1st_sem_without_evaluations",
+    "Curricular_units_2nd_sem_credited",
+    "Curricular_units_2nd_sem_enrolled",
+    "Curricular_units_2nd_sem_evaluations",
+    "Curricular_units_2nd_sem_approved",
+    "Curricular_units_2nd_sem_grade",
+    "Curricular_units_2nd_sem_without_evaluations",
+    "Unemployment_rate",
+    "Inflation_rate",
+    "GDP"
+  ],
+  "threshold": 0.5,
+  "training_statuses": [
+    "Dropout",
+    "Graduate"
+  ],
+  "excluded_from_training": {
+    "Enrolled": 794
+  },
+  "training_rows": 3630,
+  "test_rows": 726,
+  "target_distribution": {
+    "0": 2209,
+    "1": 1421
+  },
+  "top_features": [
+    {
+      "feature": "Curricular_units_2nd_sem_approved",
+      "importance": 0.24303053872831476
+    },
+    {
+      "feature": "Curricular_units_1st_sem_approved",
+      "importance": 0.14004878587760522
+    },
+    {
+      "feature": "Curricular_units_2nd_sem_grade",
+      "importance": 0.12440312189701173
+    },
+    {
+      "feature": "Curricular_units_1st_sem_grade",
+      "importance": 0.07359235769478722
+    },
+    {
+      "feature": "Tuition_fees_up_to_date",
+      "importance": 0.05635656693615813
+    },
+    {
+      "feature": "Curricular_units_2nd_sem_evaluations",
+      "importance": 0.031249242509208616
+    },
+    {
+      "feature": "Age_at_enrollment",
+      "importance": 0.029874331073635622
+    },
+    {
+      "feature": "Scholarship_holder",
+      "importance": 0.02796542256176891
+    },
+    {
+      "feature": "Curricular_units_1st_sem_evaluations",
+      "importance": 0.02550701837409839
+    },
+    {
+      "feature": "Course",
+      "importance": 0.023840471594446345
+    }
+  ]
+}

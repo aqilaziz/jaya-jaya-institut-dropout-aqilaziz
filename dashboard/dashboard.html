@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard Risiko Dropout Jaya Jaya Institut</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; color: #1f2933; }
+    h1, h2 { color: #0f172a; }
+    img { max-width: 100%; border: 1px solid #d9e2ec; }
+    table { border-collapse: collapse; margin: 16px 0 28px; width: 100%; }
+    th, td { border: 1px solid #d9e2ec; padding: 8px 10px; text-align: left; }
+    th { background: #f1f5f9; }
+    .note { background: #f8fafc; border-left: 4px solid #2563eb; padding: 12px 16px; }
+  </style>
+</head>
+<body>
+  <h1>Dashboard Monitoring Risiko Dropout Jaya Jaya Institut</h1>
+  <p class="note">Dashboard ini memakai seluruh data untuk monitoring status mahasiswa. Model machine learning dilatih hanya dengan status Dropout dan Graduate; status Enrolled dipakai sebagai data inferensi risiko.</p>
+  <h2>Visualisasi Utama</h2>
+  <img src="dashboard.png" alt="Dashboard risiko dropout">
+  <h2>Ringkasan Status</h2>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Status</th>
+      <th>size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dropout</td>
+      <td>1421</td>
+    </tr>
+    <tr>
+      <td>Enrolled</td>
+      <td>794</td>
+    </tr>
+    <tr>
+      <td>Graduate</td>
+      <td>2209</td>
+    </tr>
+  </tbody>
+</table>
+  <h2>Ringkasan Faktor Dropout vs Graduate</h2>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>feature</th>
+      <th>dropout_mean</th>
+      <th>graduate_mean</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tuition_fees_up_to_date</td>
+      <td>0.678395</td>
+      <td>0.986872</td>
+    </tr>
+    <tr>
+      <td>Debtor</td>
+      <td>0.219564</td>
+      <td>0.045722</td>
+    </tr>
+    <tr>
+      <td>Scholarship_holder</td>
+      <td>0.094300</td>
+      <td>0.377999</td>
+    </tr>
+    <tr>
+      <td>Curricular_units_1st_sem_approved</td>
+      <td>2.551724</td>
+      <td>6.232232</td>
+    </tr>
+    <tr>
+      <td>Curricular_units_2nd_sem_approved</td>
+      <td>1.940183</td>
+      <td>6.177003</td>
+    </tr>
+    <tr>
+      <td>Curricular_units_1st_sem_grade</td>
+      <td>7.256656</td>
+      <td>12.643655</td>
+    </tr>
+    <tr>
+      <td>Curricular_units_2nd_sem_grade</td>
+      <td>5.899339</td>
+      <td>12.697276</td>
+    </tr>
+    <tr>
+      <td>Age_at_enrollment</td>
+      <td>26.068966</td>
+      <td>21.783612</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
